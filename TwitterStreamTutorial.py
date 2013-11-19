@@ -27,7 +27,6 @@ class listener(StreamListener):
          print ids,"\t",tweet,"\t",user_name,"\t",profile_img_url,"\t",retweet_count,"\t",favorite_count,"\t",verified
          return True
       except BaseException, e:
-         print 'failed ondata,',str(e)
          time.sleep(3)
 
    def on_error(self, status):
