@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/noOfPositiveTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/controversyTextView"
+        android:layout_marginTop="36dp"
+  		android:textStyle="bold"
+        android:text="@string/positive_no_of_text_view" />
+
+    <TextView
+        android:id="@+id/negativeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/noOfNegativeTextView"
+        android:layout_below="@+id/noOfNegativeTextView"
+        android:textStyle="bold"
+        android:text="@string/value_negative_no_of_text_view" />
+
+    <TextView
+        android:id="@+id/noOfNegativeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/noOfPositiveTextView"
+        android:layout_alignBottom="@+id/noOfPositiveTextView"
+ 		android:textStyle="bold"
+        android:layout_toRightOf="@+id/buttons"
+        android:text="@string/negative_no_of_text_view" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/positiveButton"
+        android:layout_below="@+id/positiveButton"
+        android:layout_marginTop="47dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/topFiveCelebButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_celeb"
+            android:text="@string/top5_celeb_tweets_text_view" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/controversyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="15pt"
+        android:text="@string/default_text_view" />
+
+    <Button
+        android:id="@+id/negativeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/negativeTextView"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_edittext"
+        android:text="@string/negative_tweets_text_view" />
+
+    <Button
+        android:id="@+id/positiveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/negativeButton"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rounded_green"
+        android:text="@string/positive_tweets_text_view" />
+
+    <TextView
+        android:id="@+id/positiveTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/noOfPositiveTextView"
+        android:layout_alignTop="@+id/negativeButton"
+		android:textStyle="bold"
+        android:text="@string/value_positive_no_of_text_view" />
+
+</RelativeLayout>

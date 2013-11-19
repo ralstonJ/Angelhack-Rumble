@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rumble</string>
+    <string name="action_settings">Settings</string>
+	<string name="search_text_view">What do you want to know ?</string>
+	<string name="default_text_view">"Rob Ford Smoking"</string>
+	<string name="top5_celeb_tweets_text_view">Top 5 Celebrities</string>
+	<string name="positive_tweets_text_view">Positive Tweets</string>
+	<string name="negative_tweets_text_view">Negative Tweets</string>
+	
+	<string name="positive_no_of_text_view">Positive</string>
+	<string name="negative_no_of_text_view">Negative</string>
+	<string name="neutral_no_of_text_view">Neutral</string>
+	
+	<string name="value_positive_no_of_text_view">90%</string>
+	<string name="value_negative_no_of_text_view">10%</string>
+	<string name="value_neutral_no_of_text_view">5%</string>
+	
+    <string name="add_textbox_hint">Add a ToDo item</string>
+    <string name="add_button_text">Add</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="checkbox_text">Item Text</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rumble.home"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk android:minSdkVersion="13" android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/favicon_1_16x16x8"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme"          
+       >
+     
+        <activity
+
+            android:name="com.rumble.home.MainActivity"
+            android:label="@string/app_name"
+            
+            >
+           
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        
+        </activity>
+    
+         <activity
+            android:name="com.rumble.home.overallSentiment"
+            
+            >
+          </activity>
+
+           <activity
+            android:name="com.rumble.home.listTweets"
+            
+            >
+          </activity>
+               <activity android:name="com.rumble.home.ToDoActivity"></activity>
+    
+    </application>
+
+</manifest>
